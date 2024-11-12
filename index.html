@@ -1,37 +1,153 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <button id="theme-toggle-btn">Toggle Theme</button>
-        <h1>Chance Evans</h1>
-        <p>I am a self-taught programmer with fluency in C++, Python, and JS. I am currently learning Rust.</p>
-        
-        <h2>Interests</h2>
-        <ul>
-            <li>Operating Systems (OSes)</li>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Cryptography</li>
-            <li>Many others</li>
-        </ul>
-        
-        <h2>Current Learning Focus</h2>
-        <p>I am currently learning Rust.</p>
-        
-        <h2>Collaboration and Interaction</h2>
-        <p>I am looking to learn more through collaboration and interaction with other developers.</p>
-        
-        <h2>Contact</h2>
-        <p>You can contact me at <a href="mailto:92evansc@proton.me">92evansc@proton.me</a>.</p>
-        
-        <h2>Pronouns</h2>
-        <p>He/him</p>
-        
-        <h2>Fun Fact</h2>
-        <p>I love fantasy novels.</p>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Import Ubuntu font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        /* center everything */
+        * {
+            text-align: center;
+        }
+
+        /* Default light theme */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: 'Ubuntu', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            border-bottom: 2px solid #2c3e50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            font-weight: 400;
+        }
+
+        ul {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 20px auto;
+            display: block;
+            font-family: 'Ubuntu', Arial, sans-serif;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Dark theme */
+        body.dark-theme {
+            background-color: #121212;
+            color: #ecf0f1;
+        }
+
+        body.dark-theme h1 {
+            color: #bdc3c7;
+        }
+
+        body.dark-theme h2 {
+            color: #bdc3c7;
+            border-bottom: 2px solid #bdc3c7;
+        }
+
+        body.dark-theme a {
+            color: #2980b9;
+        }
+
+        body.dark-theme a:hover {
+            color: #2c3e50;
+        }
+
+        button.dark-theme {
+            background-color: #2c3e50;
+        }
+
+        button.dark-theme:hover {
+            background-color: #27ae60;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button id="theme-toggle-btn">Toggle Theme</button>
+    <h1>Chance Evans</h1>
+    <p>I am a self-taught programmer with fluency in C++, Python, and JS. I am currently learning Rust.</p>
+
+    <h2>Interests</h2>
+    <ul>
+        <li>Operating Systems (OSes)</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Cryptography</li>
+        <li>Many others</li>
+    </ul>
+
+    <h2>Current Learning Focus</h2>
+    <p>I am currently learning Rust.</p>
+
+    <h2>Collaboration and Interaction</h2>
+    <p>I am looking to learn more through collaboration and interaction with other developers.</p>
+
+    <h2>Contact</h2>
+    <p>You can contact me at <a href="mailto:92evansc@proton.me">92evansc@proton.me</a>.</p>
+
+    <h2>Pronouns</h2>
+    <p>He/him</p>
+
+    <h2>Fun Fact</h2>
+    <p>I love fantasy novels.</p>
+</body>
+
 </html>
